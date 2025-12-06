@@ -5,12 +5,12 @@ using namespace std;
 //for create new node
 class node{
   public:  
-    int data;       // stores the value
-    node* next;     // pointer to next node
-    node(int val)   // constructor
+    int data;     
+    node* next;    
+    node(int val)  
     {
         data = val;
-        next = NULL; // initially no next node
+        next = NULL; 
     }
 };
 
@@ -145,7 +145,7 @@ void replace(int x, int y) {
        node* temp = head;
        while(temp != NULL)
        {
-        cout << temp->data << " ";   // print current node data
+        cout << temp->data << " ";   
         temp = temp->next;           // move forward
        }
        cout << endl;
@@ -154,7 +154,7 @@ void replace(int x, int y) {
 
 int main()
 {
-      lists ls; // create list object
+      lists ls;
       ls.push_front(19);  
       ls.push_front(23); 
       ls.push_front(45);  
